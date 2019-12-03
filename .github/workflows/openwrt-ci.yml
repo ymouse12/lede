@@ -133,18 +133,18 @@ jobs:
           # EOF
 
           # USB3.0支持:
-          # cat >> .config <<EOF
-          # CONFIG_PACKAGE_kmod-usb-ohci=y
-          # CONFIG_PACKAGE_kmod-usb-ohci-pci=y
-          # CONFIG_PACKAGE_kmod-usb2=y
-          # CONFIG_PACKAGE_kmod-usb2-pci=y
-          # CONFIG_PACKAGE_kmod-usb3=y
-          # EOF
+           cat >> .config <<EOF
+           CONFIG_PACKAGE_kmod-usb-ohci=y
+           CONFIG_PACKAGE_kmod-usb-ohci-pci=y
+           CONFIG_PACKAGE_kmod-usb2=y
+           CONFIG_PACKAGE_kmod-usb2-pci=y
+           CONFIG_PACKAGE_kmod-usb3=y
+           EOF
 
           # 常用LuCI插件选择:
            cat >> .config <<EOF
           # CONFIG_PACKAGE_luci-app-adbyby-plus=y
-           CONFIG_PACKAGE_luci-app-aria2=y
+          # CONFIG_PACKAGE_luci-app-aria2=y
           # CONFIG_PACKAGE_luci-app-baidupcs-web=y
            CONFIG_PACKAGE_luci-app-docker=y
           # CONFIG_PACKAGE_luci-app-frpc=y
@@ -176,10 +176,10 @@ jobs:
           # 常用软件包:
            cat >> .config <<EOF
            CONFIG_PACKAGE_curl=y
-          # CONFIG_PACKAGE_htop=y
-          # CONFIG_PACKAGE_nano=y
-          # CONFIG_PACKAGE_screen=y
-          # CONFIG_PACKAGE_tree=y
+           CONFIG_PACKAGE_htop=y
+           CONFIG_PACKAGE_nano=y
+           CONFIG_PACKAGE_screen=y
+           CONFIG_PACKAGE_tree=y
            CONFIG_PACKAGE_vim-fuller=y
            CONFIG_PACKAGE_wget=y
            EOF
